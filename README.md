@@ -10,6 +10,8 @@ To ensure effective heat dissipation, a 12 V fan is used. This voltage is obtain
 
 The 5 V logic section of the system is powered through a two-stage voltage regulation path consisting of 20 V/12 V and 12 V/5 V voltage regulators. This configuration provides a stable power supply for the control circuitry, particularly the operational amplifiers and the microcontroller.
 
+The measurement of the actual current and voltage values is performed using two channels of the analog-to-digital converter (ADC). To convert the measured current into a corresponding voltage signal, a dedicated current sensing amplifier is used. The reference values for current and voltage are set using digital-to-analog converters (DAC) integrated in the microcontroller.
+
 PL:
 Projekt zasilacza laboratoryjnego został opracowany z myślą o wsparciu codziennej pracy podczas naprawy urządzeń elektronicznych oraz przy realizacji różnego rodzaju projektów elektronicznych. Zakres napięcia wyjściowego wynosi od około 0 V do 18,5 V, natomiast maksymalny prąd obciążenia może osiągać wartość do 3 A. Regulacja tych parametrów realizowana jest za pomocą pętli stabilizacji napięcia (CV – Constant Voltage) oraz prądu (CC – Constant Current).
 
@@ -20,3 +22,5 @@ W celu ograniczenia strat mocy oraz zmniejszenia ilości wydzielanego ciepła za
 Dla zapewnienia skutecznego odprowadzania ciepła zastosowano wentylator o napięciu zasilania 12 V. Napięcie to uzyskiwane jest za pomocą stabilizatora 20 V/12 V, który został zamontowany bezpośrednio na radiatorze w celu poprawy warunków chłodzenia.
 
 Logika układu zasilana napięciem 5 V realizowana jest poprzez dwustopniowy tor stabilizacji napięcia, składający się ze stabilizatorów 20 V/12 V oraz 12 V/5 V. W ten sposób zapewnione jest odpowiednie zasilanie dla elementów układu sterowania, w szczególności wzmacniaczy operacyjnych oraz mikrokontrolera.
+
+Pomiar rzeczywistych wartości prądu oraz napięcia realizowany jest przy użyciu dwóch kanałów przetwornika analogowo-cyfrowego (ADC). W celu przekształcenia mierzonego prądu na odpowiadające mu napięcie zastosowano dedykowany wzmacniacz pomiarowy prądu. Zadawanie wartości prądu i napięcia odbywa się natomiast przy wykorzystaniu przetworników cyfrowo-analogowych (DAC) wbudowanych w mikrokontroler.
